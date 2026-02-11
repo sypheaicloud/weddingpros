@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>DJ Vibe - Premium Wedding &amp; Event DJ</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#9311d4",
+                        "accent-gold": "#D4AF37",
+                        "accent-pink": "#ff00e6",
+                        "background-light": "#f7f6f8",
+                        "background-dark": "#1c1022",
+                        "surface-dark": "#2a1a33",
+                    },
+                    fontFamily: {
+                        "display": ["Spline Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        .silk-gradient {
+            background: linear-gradient(135deg, rgba(147, 17, 212, 0.15) 0%, rgba(28, 16, 34, 1) 100%);
+        }
+
+        .vibe-track-gradient {
+            background: linear-gradient(90deg, #D4AF37 0%, #9311d4 50%, #ff00e6 100%);
+        }
+
+        .glass-panel {
+            background: rgba(42, 26, 51, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(147, 17, 212, 0.2);
+        }
+
+        .hero-overlay {
+            background: linear-gradient(to bottom, rgba(28, 16, 34, 0.4), rgba(28, 16, 34, 1));
+        }
+
+        body {
+            font-family: 'Spline Sans', sans-serif;
+            background-color: #1c1022;
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-slate-200 font-display">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex items-center justify-between glass-panel px-8 py-3 rounded-full">
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
+                    <span class="material-icons text-white">graphic_eq</span>
+                </div>
+                <span class="text-xl font-bold tracking-tighter text-white">WEDDINGSPRO<span
+                        class="text-primary">DJS</span></span>
+            </div>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a class="hover:text-primary transition-colors" href="#">Experience</a>
+                <a class="hover:text-primary transition-colors" href="#">Pricing</a>
+                <a class="hover:text-primary transition-colors" href="#">Reviews</a>
+                <a class="hover:text-primary transition-colors" href="#">Contact</a>
+            </div>
+            <button
+                class="bg-primary hover:bg-opacity-80 text-white px-6 py-2 rounded-full text-sm font-semibold transition-all shadow-lg shadow-primary/20">
+                Book Now
+            </button>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <header class="relative h-[75vh] w-full overflow-hidden flex items-center justify-center">
+        <!-- Hero Slider Background -->
+        <div id="hero-slider" class="absolute inset-0 z-0 bg-background-dark">
+            <!-- Slide 1: Black Couple -->
+            <div class="hero-slide absolute inset-0 transition-opacity duration-1000 opacity-100">
+                <video autoplay muted loop playsinline class="w-full h-full object-cover opacity-60">
+                    <source src="black%20couuple.mov">
+                </video>
+            </div>
+            <!-- Slide 2: Reception -->
+            <div class="hero-slide absolute inset-0 transition-opacity duration-1000 opacity-0">
+                <video autoplay muted loop playsinline class="w-full h-full object-cover opacity-60">
+                    <source src="receptionn.mp4" type="video/mp4">
+                </video>
+            </div>
+            <!-- Slide 3: Rings -->
+            <div class="hero-slide absolute inset-0 transition-opacity duration-1000 opacity-0">
+                <video autoplay muted loop playsinline class="w-full h-full object-cover opacity-60">
+                    <source src="rings.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="absolute inset-0 hero-overlay"></div>
+        </div>
+        <div class="relative z-10 max-w-4xl px-6 text-center space-y-6">
+            <div
+                class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/20 border border-primary/30 text-primary text-xs font-bold uppercase tracking-widest mb-2">
+                <span class="material-icons text-sm">stars</span> Award Winning DJ Experience
+            </div>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-none tracking-tight">
+                Your Night, Your Vibe, <br />
+                <span
+                    class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent-pink">Perfected.</span>
+            </h1>
+            <p class="text-base md:text-lg text-slate-300 max-w-2xl mx-auto font-light leading-relaxed">
+                Elevating weddings and luxury events with curated soundscapes and world-class performance. 500+ dance
+                floors ignited across the globe.
+            </p>
+            <!-- Quick Date Checker -->
+            <div class="max-w-xl mx-auto mt-8 glass-panel p-2 rounded-full flex flex-col md:flex-row gap-2">
+                <div class="flex-1 flex items-center px-6 gap-3">
+                    <span class="material-icons text-primary">event</span>
+                    <input class="bg-transparent border-none focus:ring-0 text-white w-full"
+                        placeholder="Select your event date" type="text" />
+                </div>
+                <button
+                    class="bg-primary hover:bg-opacity-90 text-white px-8 py-4 rounded-full font-bold transition-all flex items-center justify-center gap-2">
+                    Check My Date <span class="material-icons">arrow_forward</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- Vibe Selector Section -->
+    <section class="py-24 px-6 relative overflow-hidden bg-background-dark">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row items-end justify-between mb-16 gap-6">
+                <div>
+                    <h2 class="text-4xl font-bold text-white mb-4">Design Your Wedding</h2>
+                    <p class="text-slate-400 max-w-lg">From Wedding Ceremony to cocktail hour to Reception we tailor the
+                        energy level to match your vision perfectly.</p>
+                </div>
+                <div class="flex items-center gap-4 text-xs font-bold uppercase tracking-widest text-slate-500">
+                    <span>100+ Weddings</span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                    <span>50+ Festivals</span>
+                </div>
+            </div>
+            <!-- Vibe Slider Widget -->
+            <div class="glass-panel p-12 rounded-xl relative">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-12">
+                        <div class="space-y-4">
+                            <div class="flex justify-between text-sm font-bold tracking-widest uppercase">
+                                <span class="text-accent-gold">Cocktail, Dinner Music</span>
+                                <span class="text-accent-pink">Reception &amp; dance music</span>
+                            </div>
+                            <div class="relative h-12 flex items-center">
+                                <div class="absolute w-full h-3 rounded-full vibe-track-gradient opacity-30"></div>
+                                <div class="absolute left-[65%] w-full h-3 rounded-full vibe-track-gradient"></div>
+                                <div
+                                    class="absolute left-[65%] w-10 h-10 bg-white rounded-full shadow-[0_0_20px_rgba(147,17,212,0.8)] border-4 border-primary cursor-pointer">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-surface-dark/50 p-6 rounded-lg border border-primary/10">
+                                <span class="material-icons text-accent-gold mb-3">auto_awesome</span>
+                                <h4 class="text-white font-bold mb-1">Modern Mix</h4>
+                                <p class="text-xs text-slate-400">Blended transitions and smooth energy flow.</p>
+                            </div>
+                            <div class="bg-surface-dark/50 p-6 rounded-lg border border-primary/10">
+                                <span class="material-icons text-primary mb-3">music_note</span>
+                                <h4 class="text-white font-bold mb-1">Pro Curation</h4>
+                                <p class="text-xs text-slate-400">Hand-picked playlists based on your guests.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <div
+                            class="absolute -inset-1 bg-gradient-to-r from-primary to-accent-pink rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-1000">
+                        </div>
+                        <div class="relative bg-surface-dark rounded-lg overflow-hidden">
+                            <img class="w-full h-80 object-cover"
+                                data-alt="Happy wedding couple taking a selfie at sunset" src="image1.jpg" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-surface-dark via-transparent to-transparent">
+                            </div>
+                            <div class="absolute bottom-0 left-0 p-8">
+                                <h3 class="text-2xl font-bold text-white">Professional, Detailed Wedding DJ Services
+                                </h3>
+                                <p class="text-slate-300">Deep house, rhythmic grooves, and elegant transitions.
+                                    Customized for each Couple.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Quote Calculator & Booking Section -->
+    <section class="py-24 px-6 silk-gradient">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16">
+            <!-- Quote Form -->
+            <div class="lg:col-span-7 space-y-8">
+                <div>
+                    <h2 class="text-4xl font-bold text-white mb-4">Instant Quote Calculator</h2>
+                    <p class="text-slate-400">Tailor your package and get an immediate estimate for your big day.</p>
+                </div>
+                <div class="glass-panel p-8 rounded-xl space-y-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                            <label class="text-sm font-bold text-slate-300 ml-1">Event Duration</label>
+                            <div class="relative">
+                                <select
+                                    class="w-full bg-surface-dark border border-primary/20 rounded-lg px-4 py-3 text-white appearance-none focus:ring-primary focus:border-primary">
+                                    <option>4 Hours (Standard Reception)</option>
+                                    <option>6 Hours (Ceremony + Reception)</option>
+                                    <option>8 Hours (All-Day Premium)</option>
+                                </select>
+                                <span
+                                    class="material-icons absolute right-3 top-3.5 text-slate-500 pointer-events-none">expand_more</span>
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-sm font-bold text-slate-300 ml-1">Expected Guests</label>
+                            <div class="relative">
+                                <select
+                                    class="w-full bg-surface-dark border border-primary/20 rounded-lg px-4 py-3 text-white appearance-none focus:ring-primary focus:border-primary">
+                                    <option>Under 100</option>
+                                    <option>100 - 250</option>
+                                    <option>250+</option>
+                                </select>
+                                <span
+                                    class="material-icons absolute right-3 top-3.5 text-slate-500 pointer-events-none">groups</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <label class="text-sm font-bold text-slate-300 ml-1">Add-On Experiences</label>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <button
+                                class="flex items-center justify-between p-4 rounded-lg bg-primary/10 border border-primary/40 text-white">
+                                <div class="flex items-center gap-3">
+                                    <span class="material-icons text-primary">flare</span>
+                                    <span class="text-sm font-medium">Cold Spark Fountains</span>
+                                </div>
+                                <span class="material-icons text-primary">check_circle</span>
+                            </button>
+                            <button
+                                class="flex items-center justify-between p-4 rounded-lg bg-surface-dark border border-white/5 text-slate-400 hover:border-primary/40 transition-all">
+                                <div class="flex items-center gap-3">
+                                    <span class="material-icons">cloud</span>
+                                    <span class="text-sm font-medium">Dancing on Clouds (Dry Ice)</span>
+                                </div>
+                                <span class="material-icons">add_circle_outline</span>
+                            </button>
+                            <button
+                                class="flex items-center justify-between p-4 rounded-lg bg-surface-dark border border-white/5 text-slate-400 hover:border-primary/40 transition-all">
+                                <div class="flex items-center gap-3">
+                                    <span class="material-icons">high_quality</span>
+                                    <span class="text-sm font-medium">Uplighting Package</span>
+                                </div>
+                                <span class="material-icons">add_circle_outline</span>
+                            </button>
+                            <button
+                                class="flex items-center justify-between p-4 rounded-lg bg-primary/10 border border-primary/40 text-white">
+                                <div class="flex items-center gap-3">
+                                    <span class="material-icons text-primary">mic</span>
+                                    <span class="text-sm font-medium">MC Services (Hosting)</span>
+                                </div>
+                                <span class="material-icons text-primary">check_circle</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="pt-6 border-t border-white/10 flex items-center justify-between">
+                        <div>
+                            <span class="text-slate-400 text-sm">Estimated Total</span>
+                            <div class="text-3xl font-bold text-white">$1,850<span
+                                    class="text-slate-500 text-lg font-normal"> / avg</span></div>
+                        </div>
+                        <button
+                            class="bg-primary hover:bg-opacity-90 text-white px-8 py-4 rounded-full font-bold transition-all shadow-xl shadow-primary/20">
+                            Reserve My Date
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Availability Calendar -->
+            <div class="lg:col-span-5 flex flex-col justify-center">
+                <div class="glass-panel p-8 rounded-xl space-y-6">
+                    <div class="flex items-center justify-between">
+                        <h3 class="text-xl font-bold text-white">Availability</h3>
+                        <div class="flex gap-2">
+                            <button
+                                class="w-8 h-8 flex items-center justify-center rounded-full bg-surface-dark text-white hover:bg-primary/20 transition-colors">
+                                <span class="material-icons text-sm">chevron_left</span>
+                            </button>
+                            <button
+                                class="w-8 h-8 flex items-center justify-center rounded-full bg-surface-dark text-white hover:bg-primary/20 transition-colors">
+                                <span class="material-icons text-sm">chevron_right</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="text-center font-bold text-primary mb-2">October 2024</div>
+                    <div
+                        class="grid grid-cols-7 gap-2 text-center text-[10px] font-bold uppercase tracking-tighter text-slate-500 mb-2">
+                        <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+                    </div>
+                    <div class="grid grid-cols-7 gap-2 text-sm">
+                        <!-- Calendar Days Mockup -->
+                        <div class="p-2 text-slate-700">29</div>
+                        <div class="p-2 text-slate-700">30</div>
+                        <div class="p-2 text-white">1</div>
+                        <div class="p-2 text-white">2</div>
+                        <div class="p-2 text-white">3</div>
+                        <div
+                            class="p-2 bg-accent-gold/20 text-accent-gold font-bold rounded-lg border border-accent-gold/30">
+                            4</div>
+                        <div
+                            class="p-2 bg-primary text-white font-bold rounded-lg shadow-lg shadow-primary/40 ring-2 ring-primary ring-offset-2 ring-offset-background-dark">
+                            5</div>
+                        <div class="p-2 text-white">6</div>
+                        <div class="p-2 text-white">7</div>
+                        <div class="p-2 text-white">8</div>
+                        <div class="p-2 text-white">9</div>
+                        <div class="p-2 text-white">10</div>
+                        <div
+                            class="p-2 bg-accent-gold/20 text-accent-gold font-bold rounded-lg border border-accent-gold/30">
+                            11</div>
+                        <div
+                            class="p-2 bg-accent-gold/20 text-accent-gold font-bold rounded-lg border border-accent-gold/30">
+                            12</div>
+                        <!-- ... more days ... -->
+                        <div class="p-2 text-white">13</div>
+                        <div class="p-2 text-white">14</div>
+                        <div class="p-2 text-white">15</div>
+                        <div class="p-2 text-white">16</div>
+                        <div class="p-2 text-white">17</div>
+                        <div class="p-2 text-white">18</div>
+                        <div
+                            class="p-2 bg-accent-gold/20 text-accent-gold font-bold rounded-lg border border-accent-gold/30">
+                            19</div>
+                    </div>
+                    <div class="flex items-center gap-6 pt-4 text-[11px] font-bold uppercase tracking-widest">
+                        <div class="flex items-center gap-2">
+                            <span class="w-3 h-3 rounded bg-primary"></span>
+                            <span class="text-white">Selected</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="w-3 h-3 rounded bg-accent-gold/30 border border-accent-gold/50"></span>
+                            <span class="text-slate-400">Booked</span>
+                        </div>
+                    </div>
+                    <div class="bg-primary/10 border border-primary/20 p-4 rounded-lg">
+                        <p class="text-xs text-white leading-relaxed">
+                            <span class="font-bold text-primary">Note:</span> Weekends in October are filling fast! 85%
+                            of Saturdays are already booked.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials Section -->
+    <section class="py-24 px-6 bg-background-dark">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold text-white text-center mb-16">Stories from the Dance Floor</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="glass-panel p-8 rounded-xl space-y-6 relative group overflow-hidden">
+                    <div class="absolute top-0 right-0 p-4 opacity-10">
+                        <span class="material-icons text-6xl">format_quote</span>
+                    </div>
+                    <div class="flex text-accent-gold">
+                        <span class="material-icons text-sm">star</span>
+                        <span class="material-icons text-sm">star</span>
+                        <span class="material-icons text-sm">star</span>
+                        <span class="material-icons text-sm">star</span>
+                        <span class="material-icons text-sm">star</span>
+                    </div>
+                    <p class="text-slate-300 italic">"The music was the highlight of our wedding. Everyone from my
+                        80-year-old grandma to our college friends was on the floor all night long. Simply incredible
+                        energy!"</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden border-2 border-primary/40">
+                            <img class="w-full h-full object-cover"
+                                data-alt="Happy bride and groom smiling at their wedding"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-GPvW3wPxp-tbbRsykjRIPVaYWQEJRYgkO97tDHBpp5MX1cB14KQhg6j53PAwGVlvMGUge4fIelnA1OT6AyRcFhYYxCWqBW86YnuHn-pKZNFbk9Aje1bKBUb7Lhy42JITK9Bky-_mVLDzVGI87l2L-XCTKQnBfgipMXrbe_ptmu8Azrun2H89evuZPEpNrzEnbpLy3AE0iPKSHgcA5qt8TFGKhWp_yLyJfHebMGEOb2pLq8CZxF_qYfLcyqJrjhS2VrxFI3NVpC0" />
+                        </div>
+                        <div>
+                            <div class="text-white font-bold">Sarah &amp; Michael</div>
+                            <div class="text-xs text-slate-500">The Plaza Hotel, NYC</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="glass-panel p-8 rounded-xl space-y-6 relative group overflow-hidden">
+                    <div class="absolute top-0 right-0 p-4 opacity-10">
+                        <span class="material-icons text-6xl">format_quote</span>
+                    </div>
+                    <div class="flex text-accent-gold">
+                        <span class="material-icons text-sm">star</span>
+                        <span class="material-icons text-sm">star</span>
+                        <span class="material-icons text-sm">star</span>
+                        <span class="material-icons text-sm">star</span>
+                        <span class="material-icons text-sm">star</span>
+                    </div>
+                    <p class="text-slate-300 italic">"We wanted a club vibe for our corporate gala and he delivered
+                        beyond expectations. The lighting sync and track selection were flawless. Highly recommend."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden border-2 border-primary/40">
+                            <img class="w-full h-full object-cover"
+                                data-alt="Professional man in a suit at a corporate event"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvhuPClLg2D09k_GcWfiMhoN1cZ43i7k4FR6XJ9QZXRjTRO5ctpPEFZrqUgS0JsBES4CDTQhy6MxYNhyt4aXhIX1laYzFXnLq2eQSmoR74rV675zg4DCME2q4fJ-eq_kBkBl1kvgac3oRL23GfF8vJACYXiW6rPCrWGygguOC-ieqqG9Quzqw-NokUaxGRMxGOtBU6Z3i9TXi0h5yAfzU_TN29xRxbvlMgB7q2NOSam2Cv4NUgE8steswTUFwlc-0rxu19j7pS9Ug" />
+                        </div>
+                        <div>
+                            <div class="text-white font-bold">David Chen</div>
+                            <div class="text-xs text-slate-500">TechSummit Executive Gala</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="glass-panel p-8 rounded-xl space-y-6 relative group overflow-hidden">
+                    <div class="absolute top-0 right-0 p-4 opacity-10">
+                        <span class="material-icons text-6xl">format_quote</span>
+                    </div>
+                    <div class="flex text-accent-gold">
+                        <span class="material-icons text-sm">star</span>
+                        <span class="material-icons text-sm">star</span>
+                        <span class="material-icons text-sm">star</span>
+                        <span class="material-icons text-sm">star</span>
+                        <span class="material-icons text-sm">star</span>
+                    </div>
+                    <p class="text-slate-300 italic">"From the classy cocktail hour to the 'rage' after-party, the
+                        transition was seamless. Our guests are still talking about the cold sparklers during our first
+                        dance!"</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden border-2 border-primary/40">
+                            <img class="w-full h-full object-cover" data-alt="Elegant woman at a formal dinner event"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGeG9WApveN72qPemPoCe0jVX52rYtbv2_Ro2PIahUc5fUKwTSnXNJTIXN-LeiuWUBzUgtea6gXQpM1XpoVvrcs5MJ7pDBFhzm5I_OGIXnWfjC4GB2N_tc_WcukVbUxBsXuofYaZA4YxZ0EPRqFtRXjzo7C9wGRTHAFAtUasBYCttLVyuyz1t5GLXNl2IgeWms0nE_WBV0uuMtVFmHV7LG2eiEC7oB8828gtW7dXFVa6ZjaCnWRerLcn4DpJPiF75apAf7zyXLoBw" />
+                        </div>
+                        <div>
+                            <div class="text-white font-bold">Amanda R.</div>
+                            <div class="text-xs text-slate-500">The Glass House, LA</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-background-dark pt-20 pb-10 px-6 border-t border-white/5">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-1 md:col-span-2 space-y-6">
+                    <div class="flex items-center gap-2">
+                        <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
+                            <span class="material-icons text-white">graphic_eq</span>
+                        </div>
+                        <span class="text-2xl font-bold tracking-tighter text-white">VIBE<span
+                                class="text-primary">DJ</span></span>
+                    </div>
+                    <p class="text-slate-400 max-w-sm">Premium Wedding & Events DJ services. Based in MN, performing
+                        worldwide.</p>
+                    <div class="flex gap-4">
+                        <a class="w-10 h-10 rounded-full glass-panel flex items-center justify-center hover:bg-primary transition-colors"
+                            href="#">
+                            <i class="material-icons text-lg">instagram</i>
+                        </a>
+                        <a class="w-10 h-10 rounded-full glass-panel flex items-center justify-center hover:bg-primary transition-colors"
+                            href="#">
+                            <i class="material-icons text-lg">facebook</i>
+                        </a>
+                        <a class="w-10 h-10 rounded-full glass-panel flex items-center justify-center hover:bg-primary transition-colors"
+                            href="#">
+                            <i class="material-icons text-lg">music_video</i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6">Quick Links</h4>
+                    <ul class="space-y-4 text-slate-400 text-sm">
+                        <li><a class="hover:text-primary transition-colors" href="#">Experience Packages</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">The Music Logic</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Wedding Timeline</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6">Contact Us</h4>
+                    <ul class="space-y-4 text-slate-400 text-sm">
+                        <li class="flex items-center gap-3">
+                            <span class="material-icons text-primary text-sm">email</span> hello@vibedj.com
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="material-icons text-primary text-sm">phone</span> +1 (555) 234-5678
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="material-icons text-primary text-sm">location_on</span> Minnesota
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500 uppercase tracking-widest font-bold">
+                <p>© 2024 VIBE DJ Experiences. All Rights Reserved.</p>
+                <div class="flex gap-8">
+                    <a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+                    <a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Hero Slider Logic
+        const slides = document.querySelectorAll('.hero-slide');
+        let currentSlide = 0;
+
+        function nextSlide() {
+            slides[currentSlide].classList.replace('opacity-100', 'opacity-0');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.replace('opacity-0', 'opacity-100');
+        }
+
+        if (slides.length > 1) {
+            setInterval(nextSlide, 5000); // Change slide every 5 seconds
+        }
+    </script>
+</body>
+
+</html>
